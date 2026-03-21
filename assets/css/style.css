@@ -176,6 +176,21 @@ main {
   gap: 5px;
 }
 
+.research-interests {
+  font-size: 0.9rem;
+  color: var(--text);
+  margin: 12px 0 6px;
+  padding: 10px 14px;
+  background: var(--bg-alt);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 6px 6px 0;
+  line-height: 1.6;
+}
+
+.research-interests strong {
+  color: var(--primary);
+}
+
 /* ─── Tabs ─── */
 .tabs-bar {
   display: flex;
@@ -346,6 +361,14 @@ main {
   margin-bottom: 26px;
   padding-left: 18px;
   border-left: 3px solid var(--accent);
+}
+
+.experience-item.research-highlight {
+  border-left-color: #e74c3c;
+  background: linear-gradient(to right, rgba(231, 76, 60, 0.04), transparent);
+  padding: 16px 16px 16px 18px;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 30px;
 }
 
 .experience-item .exp-header {

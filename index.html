@@ -17,7 +17,7 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links">
-      <li><a href="#" onclick="switchTab('news');return false">bio</a></li>
+      <li><a href="#" onclick="switchTab('publications');return false">bio</a></li>
       <li><a href="cv/LNBN-CV-AI.pdf" target="_blank">cv</a></li>
       <li><a href="https://scholar.google.com/citations?user=-wDkn7AAAAAJ&hl=en" target="_blank">scholar</a></li>
     </ul>
@@ -33,20 +33,26 @@
   </div>
   <div class="about-info">
     <h1>Le Nguyen Binh Nam</h1>
-    <div class="subtitle">AI Engineer &amp; Researcher</div>
+    <div class="subtitle">AI Researcher</div>
     <div class="affiliation">
-      <a href="https://www.visily.ai" target="_blank">Visily</a> · <a href="https://www.hcmus.edu.vn" target="_blank">University of Science — VNU-HCM</a>
+      <a href="https://www.hcmus.edu.vn" target="_blank">University of Science — VNU-HCM</a> · <a href="https://www.visily.ai" target="_blank">Visily</a>
     </div>
     <p class="bio">
-      I'm an AI Engineer at <strong>Visily</strong> and a Master's student in Artificial Intelligence at the <strong>University of Science — VNU-HCM</strong>.
-      My work spans <strong>computer vision</strong>, <strong>natural language processing</strong>, <strong>large language models</strong>, and <strong>medical imaging</strong>.
+      I'm an AI Researcher at the <strong>University of Science — VNU-HCM</strong> and a research collaborator at the <strong>University of Houston</strong>.
+      My research focuses on <strong>medical image analysis</strong>, <strong>visual question answering</strong>, and <strong>explainable AI</strong>, with applications in computational pathology and multimodal reasoning.
     </p>
     <p class="bio">
-      Previously, I collaborated with the <strong>University of Houston</strong>, where I led a research team on Visual Question Answering and Medical Imaging Analysis, resulting in <strong>4 publications</strong> at top-tier conferences (WACV, MICCAI, ICISN, etc.).
+      I have published <strong>4 papers</strong> as first/co-first author at top-tier venues including <strong>WACV</strong> and <strong>MICCAI Workshop</strong>, spanning whole slide image classification, feature attribution, and Vietnamese VQA benchmarks.
+      I am currently seeking <strong>PhD positions</strong> in computer vision, medical AI, or multimodal learning.
     </p>
     <p class="bio">
-      I'm passionate about building AI systems that solve real-world problems — from generative design and multimodal RAG to agentic workflows and medical AI.
+      I also bring <strong>3+ years of industry experience</strong> as an AI Engineer, building production systems for generative design, multimodal RAG, and multi-agent workflows.
     </p>
+
+    <div class="research-interests">
+      <strong>Research Interests:</strong> Medical Image Analysis · Explainable AI · Visual Question Answering · Computational Pathology · Multimodal Learning · Vision-Language Models
+    </div>
+
     <div class="contact-links">
       <a href="mailto:lnbinhnamhcmus@gmail.com"><i class="fas fa-envelope"></i> Email</a>
       <a href="https://linkedin.com/in/binhnam2907" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
@@ -58,16 +64,16 @@
 
 <!-- ─── Tab Bar ─── -->
 <div class="tabs-bar">
-  <button class="tab-btn active" onclick="switchTab('news')">News</button>
-  <button class="tab-btn" onclick="switchTab('publications')">Publications</button>
-  <button class="tab-btn" onclick="switchTab('experience')">Experience</button>
+  <button class="tab-btn active" onclick="switchTab('publications')">Publications</button>
+  <button class="tab-btn" onclick="switchTab('research')">Research</button>
+  <button class="tab-btn" onclick="switchTab('experience')">Industry</button>
+  <button class="tab-btn" onclick="switchTab('news')">News</button>
   <button class="tab-btn" onclick="switchTab('projects')">Projects</button>
   <button class="tab-btn" onclick="switchTab('education')">Education</button>
-  <button class="tab-btn" onclick="switchTab('skills')">Skills</button>
 </div>
 
 <!-- ═══════════════════ TAB: News ═══════════════════ -->
-<div id="tab-news" class="tab-panel active">
+<div id="tab-news" class="tab-panel">
   <h2 class="section-title">news</h2>
   <table class="news-table">
     <tr>
@@ -102,7 +108,7 @@
 </div>
 
 <!-- ═══════════════════ TAB: Publications ═══════════════════ -->
-<div id="tab-publications" class="tab-panel">
+<div id="tab-publications" class="tab-panel active">
   <h2 class="section-title">publications</h2>
 
   <div class="pub-item">
@@ -155,9 +161,59 @@
   </div>
 </div>
 
-<!-- ═══════════════════ TAB: Experience ═══════════════════ -->
+<!-- ═══════════════════ TAB: Research ═══════════════════ -->
+<div id="tab-research" class="tab-panel">
+  <h2 class="section-title">research experience</h2>
+
+  <div class="experience-item research-highlight">
+    <div class="exp-header">
+      <span class="exp-title">Research Collaborator</span>
+      <span class="exp-date">Jul 2024 — Present</span>
+    </div>
+    <div class="exp-company">University of Houston · Advisor: Prof. Hien Van Nguyen &amp; Prof. Ulas Bagci</div>
+    <ul>
+      <li>Led a 4-member research team on Visual Question Answering (VQA) and Medical Imaging Analysis.</li>
+      <li>Developed <strong>Contrastive Integrated Gradients (CIG)</strong>, a novel feature attribution method for explainable whole slide image classification, validated on 3 cancer datasets (CAMELYON16, TCGA-RCC, TCGA-Lung). Published at <strong>WACV 2026</strong>.</li>
+      <li>Co-developed <strong>GMAT</strong>, a grounded multi-agent framework for clinical description generation in vision-language MIL pipelines for WSI classification. Published at <strong>MICCAI 2025 Workshop</strong>.</li>
+      <li>Built <strong>ViInfographicVQA</strong>, the first Vietnamese infographic VQA benchmark (6,747 infographics, 20,409 QA pairs) with single- and multi-image evaluation settings.</li>
+      <li>Designed an automated pipeline for constructing Vietnamese VQA-NLE datasets. Published at <strong>ICISN 2025</strong>.</li>
+    </ul>
+    <div class="exp-tags">
+      <span>Medical Imaging</span><span>Explainable AI</span><span>WSI Classification</span><span>VQA</span><span>Vision-Language Models</span><span>PyTorch</span>
+    </div>
+  </div>
+
+  <div class="experience-item">
+    <div class="exp-header">
+      <span class="exp-title">AI Research Engineer</span>
+      <span class="exp-date">Mar 2023 — May 2024</span>
+    </div>
+    <div class="exp-company">KMS Technology · Innovation Labs (KMS Healthcare)</div>
+    <ul>
+      <li>Developed <strong>GenCXR</strong>, a chest X-ray radiology agent with region detection and automated report generation. Achieved <strong>High Excellence in AI</strong> and <strong>2nd Prize at Techcon23</strong>.</li>
+      <li>Trained and validated Computer Vision models (PyTorch) for pathology detection on medical imaging data.</li>
+      <li>Built an LLM-based medical chatbot for clinician interaction with radiology reports.</li>
+    </ul>
+    <div class="exp-tags">
+      <span>PyTorch</span><span>Medical Imaging</span><span>Computer Vision</span><span>LLMs</span><span>Report Generation</span>
+    </div>
+  </div>
+
+  <div class="experience-item">
+    <div class="exp-header">
+      <span class="exp-title">MS Student (BSMS Program)</span>
+      <span class="exp-date">Apr 2023 — Aug 2026</span>
+    </div>
+    <div class="exp-company">University of Science — VNU-HCM · Major: Artificial Intelligence</div>
+    <ul>
+      <li>GPA: 3.36 / 4.0. Coursework in deep learning, computer vision, NLP, and optimization.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ═══════════════════ TAB: Industry Experience ═══════════════════ -->
 <div id="tab-experience" class="tab-panel">
-  <h2 class="section-title">experience</h2>
+  <h2 class="section-title">industry experience</h2>
 
   <div class="experience-item">
     <div class="exp-header">
@@ -175,18 +231,6 @@
     <div class="exp-tags">
       <span>Python</span><span>PyTorch</span><span>LLMs</span><span>FastAPI</span><span>Stable Diffusion</span><span>TypeScript</span><span>PostgreSQL</span><span>Redis</span>
     </div>
-  </div>
-
-  <div class="experience-item">
-    <div class="exp-header">
-      <span class="exp-title">Research Collaborator</span>
-      <span class="exp-date">Jul 2024 — Present</span>
-    </div>
-    <div class="exp-company">University of Houston</div>
-    <ul>
-      <li>Led a 4-member research team on VQA and Medical Imaging Analysis.</li>
-      <li>Published 4 papers as first/co-first author at WACV, MICCAI Workshop, ICISN.</li>
-    </ul>
   </div>
 
   <div class="experience-item">
@@ -210,14 +254,14 @@
       <span class="exp-title">AI Engineer</span>
       <span class="exp-date">Mar 2023 — May 2024</span>
     </div>
-    <div class="exp-company">KMS Technology</div>
+    <div class="exp-company">KMS Technology · Innovation Center</div>
     <ul>
-      <li><strong>Innovation Center:</strong> Built multi-agent employee tracking system with CrewAI &amp; AutoGen.</li>
-      <li><strong>KMS Healthcare:</strong> Developed GenCXR chest X-ray radiology agent. Won 2nd Prize at Techcon23.</li>
-      <li>Built prescription reminder system using OCR + LlamaIndex.</li>
+      <li>Built multi-agent employee tracking system with CrewAI &amp; AutoGen (Human-in-the-Loop workflows).</li>
+      <li>Developed RAG-based features using LlamaIndex and FastAPI for HRM system querying.</li>
+      <li>Built prescription reminder system using OCR + LlamaIndex for medication extraction.</li>
     </ul>
     <div class="exp-tags">
-      <span>PyTorch</span><span>LlamaIndex</span><span>CrewAI</span><span>AutoGen</span><span>Computer Vision</span><span>OCR</span>
+      <span>LlamaIndex</span><span>CrewAI</span><span>AutoGen</span><span>FastAPI</span><span>OCR</span>
     </div>
   </div>
 
