@@ -17,7 +17,7 @@ Open `index.html` in a browser, or deploy to **GitHub Pages**:
 ├── index.html            # Main page
 ├── assets/css/style.css  # Styles
 ├── img/profile.jpg       # Profile photo
-├── cv/LNBN-CV-AI.pdf     # CV download
+├── cv/LNBNam_CV_AIE.pdf  # CV download
 └── README.md
 ```
 
@@ -26,4 +26,4 @@ Open `index.html` in a browser, or deploy to **GitHub Pages**:
 - **Publications**: Update the `[Paper Title — Update Me]` placeholders in `index.html`
 - **Links**: Replace placeholder `Scholar` and `GitHub` URLs in the contact section
 - **Photo**: Replace `img/profile.jpg`
-- **CV**: Replace `cv/LNBN-CV-AI.pdf`
+- **CV**: Replace `cv/LNBNam_CV_AIE.pdf`
