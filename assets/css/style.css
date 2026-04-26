@@ -170,10 +170,15 @@ main {
   margin-top: 6px;
 }
 
-.contact-links a {
+.contact-links a,
+.contact-links .contact-location {
   display: inline-flex;
   align-items: center;
   gap: 5px;
+}
+
+.contact-links .contact-location {
+  color: var(--muted, #666);
 }
 
 .research-interests {

@@ -33,12 +33,12 @@
   </div>
   <div class="about-info">
     <h1>Le Nguyen Binh Nam</h1>
-    <div class="subtitle">AI Researcher</div>
+    <div class="subtitle">AI Engineer &amp; AI Researcher</div>
     <div class="affiliation">
       <a href="https://www.hcmus.edu.vn" target="_blank">University of Science — VNU-HCM</a> · <a href="https://www.fpt-software.com" target="_blank">FPT Software</a>
     </div>
     <p class="bio">
-      I'm an AI Researcher at the <strong>University of Science — VNU-HCM</strong> and a research collaborator at the <strong>University of Houston</strong>.
+      I'm an <strong>AI Engineer &amp; AI Researcher</strong> based in Ho Chi Minh City, Viet Nam. I'm pursuing an MS in Artificial Intelligence at the <strong>University of Science — VNU-HCM</strong> (BSMS track) and collaborate with the <strong>University of Houston</strong>.
       My research focuses on <strong>medical image analysis</strong>, <strong>visual question answering</strong>, and <strong>explainable AI</strong>, with applications in computational pathology and multimodal reasoning.
     </p>
     <p class="bio">
@@ -54,7 +54,9 @@
     </div>
 
     <div class="contact-links">
-      <a href="mailto:lnbinhnamhcmus@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+      <a href="mailto:lnbinhnamhcmus@gmail.com"><i class="fas fa-envelope"></i> lnbinhnamhcmus@gmail.com</a>
+      <a href="tel:+84914278626"><i class="fas fa-phone"></i> 0914 278 626</a>
+      <span class="contact-location"><i class="fas fa-location-dot"></i> Ho Chi Minh City, Viet Nam</span>
       <a href="https://linkedin.com/in/binhnam2907" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
       <a href="https://scholar.google.com/citations?user=-wDkn7AAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i> Scholar</a>
       <a href="https://github.com/binhnam2907" target="_blank"><i class="fab fa-github"></i> GitHub</a>
@@ -70,6 +72,7 @@
   <button class="tab-btn" onclick="switchTab('news')">News</button>
   <button class="tab-btn" onclick="switchTab('projects')">Projects</button>
   <button class="tab-btn" onclick="switchTab('education')">Education</button>
+  <button class="tab-btn" onclick="switchTab('skills')">Skills</button>
 </div>
 
 <!-- ═══════════════════ TAB: News ═══════════════════ -->
@@ -194,12 +197,13 @@
     </div>
     <div class="exp-company">KMS Technology · Innovation Labs (KMS Healthcare)</div>
     <ul>
-      <li>Developed <strong>GenCXR</strong>, a chest X-ray radiology agent with region detection and automated report generation. Achieved <strong>High Excellence in AI</strong> and <strong>2nd Prize at Techcon23</strong>.</li>
-      <li>Trained and validated Computer Vision models (PyTorch) for pathology detection on medical imaging data.</li>
-      <li>Built an LLM-based medical chatbot for clinician interaction with radiology reports.</li>
+      <li>Developed <strong>GenCXR</strong>, a chest X-ray object-detection + segmentation pipeline (PyTorch, Torchvision, Detectron2 / SAM) evaluated with mAP / IoU / F1, driving an LLM-based automated radiology report generator.</li>
+      <li>Trained and validated Computer Vision models (PyTorch) for pathology detection — <strong>High Excellence in AI</strong> and <strong>2nd Prize at Techcon23</strong>.</li>
+      <li>Integrated an <strong>LLM-based medical chatbot</strong> so clinicians can query and interact with generated radiology reports.</li>
+      <li>Built a <strong>Prescription Reminder</strong> system using OCR + LlamaIndex to extract medication data from images and automate dosage scheduling.</li>
     </ul>
     <div class="exp-tags">
-      <span>PyTorch</span><span>Medical Imaging</span><span>Computer Vision</span><span>LLMs</span><span>Report Generation</span>
+      <span>PyTorch</span><span>Detectron2</span><span>SAM</span><span>Medical Imaging</span><span>Computer Vision</span><span>LLMs</span><span>Report Generation</span>
     </div>
   </div>
 
@@ -244,14 +248,16 @@
     </div>
     <div class="exp-company">Visily</div>
     <ul>
-      <li>Architected multimodal image generation module using Stable Diffusion &amp; Google Image Gen (40% increase in user-generated assets).</li>
-      <li>Engineered Screenshot2Design pipeline (Object Detection + LLM Code Gen) — 25% accuracy improvement.</li>
-      <li>Built Diagram-to-Design converting static flowcharts into editable UI layouts (90% success rate).</li>
-      <li>Implemented RAG for Text-to-Design, boosting prompt-to-design relevance by 30%.</li>
-      <li>Optimized Auto-Prototype engine via parallel processing — 60% faster execution.</li>
+      <li><strong>Generative Design Systems:</strong> architected a multimodal image generation module using Stable Diffusion &amp; Google Image Gen — 40% increase in user-generated assets.</li>
+      <li><strong>Screenshot2Design (CV + Code Gen):</strong> engineered a hybrid pipeline combining YOLO-based object detection with LLM code generation to reconstruct UI from raw screenshots — 25% layout-accuracy improvement, removed most manual adjustments.</li>
+      <li><strong>Any2Component &amp; Design Systems:</strong> built an automated engine to convert unstructured user inputs into standardized UI components — 35% improvement in design-system adherence.</li>
+      <li><strong>System Optimization:</strong> optimized the Auto-Prototype engine via parallel processing — 60% faster end-to-end execution and higher concurrent-user capacity.</li>
+      <li><strong>RAG &amp; NLP Integration:</strong> enhanced Text-to-Design semantic understanding with Retrieval-Augmented Generation — +30% prompt-to-design relevance.</li>
+      <li><strong>Multimodal Layout Generation (Diagram-to-Design):</strong> applied document layout analysis (LayoutLM-style) + vision transformers to convert flowcharts and diagrams into structured editable UI layouts — 90% success rate; same pattern used for floor-plan / blueprint parsing.</li>
+      <li><strong>Intelligent UI Modification:</strong> built cross-screen modification services leveraging NLP and layout understanding to automate complex single- and multi-page design iterations.</li>
     </ul>
     <div class="exp-tags">
-      <span>Python</span><span>PyTorch</span><span>LLMs</span><span>FastAPI</span><span>Stable Diffusion</span><span>TypeScript</span><span>PostgreSQL</span><span>Redis</span>
+      <span>Python</span><span>PyTorch</span><span>OpenCV</span><span>Hugging Face</span><span>ONNX</span><span>LLMs</span><span>Stable Diffusion</span><span>FastAPI</span><span>PostgreSQL</span><span>Redis</span><span>TypeScript</span>
     </div>
   </div>
 
@@ -262,12 +268,12 @@
     </div>
     <div class="exp-company">Kegmil</div>
     <ul>
-      <li>Built multimodal RAG pipeline for construction data (text, images, tables) — 94% accuracy.</li>
-      <li>Developed multi-agent voice assistant for automated call handling.</li>
-      <li>Built AI test-case generator from JIRA tickets — 60% QC throughput boost.</li>
+      <li><strong>ConstructChatbot (Multimodal Document AI):</strong> end-to-end pipeline parsing construction PDFs and blueprints (text, tables, images, dimension annotations) with PaddleOCR + LayoutLM-style document layout analysis, feeding a multimodal RAG system — 94% retrieval accuracy with successful client integration.</li>
+      <li><strong>Agentic Call Center:</strong> developed a multi-agent voice assistant to automate customer-service call handling and structured information collection.</li>
+      <li><strong>TestAndTick (SDLC Automation):</strong> built an AI tool generating test cases from JIRA tickets — +60% QC throughput and −40% PO admin time.</li>
     </ul>
     <div class="exp-tags">
-      <span>Multi-Agent</span><span>LLMs</span><span>RAG</span><span>FastAPI</span><span>Docker</span><span>PostgreSQL</span>
+      <span>Multi-Agent</span><span>LLMs</span><span>RAG</span><span>PaddleOCR</span><span>Donut</span><span>LayoutLM</span><span>FastAPI</span><span>Docker</span><span>ONNX</span><span>TorchServe</span><span>PostgreSQL</span>
     </div>
   </div>
 
@@ -276,14 +282,17 @@
       <span class="exp-title">AI Engineer</span>
       <span class="exp-date">Mar 2023 — May 2024</span>
     </div>
-    <div class="exp-company">KMS Technology · Innovation Center</div>
+    <div class="exp-company">KMS Technology · Innovation Center (HRM Systems) &amp; Innovation Labs (KMS Healthcare)</div>
     <ul>
-      <li>Built multi-agent employee tracking system with CrewAI &amp; AutoGen (Human-in-the-Loop workflows).</li>
-      <li>Developed RAG-based features using LlamaIndex and FastAPI for HRM system querying.</li>
-      <li>Built prescription reminder system using OCR + LlamaIndex for medication extraction.</li>
+      <li><strong>Multi-Agent Systems (HRM):</strong> engineered an automated employee-contribution tracking system with CrewAI &amp; AutoGen, implementing Human-in-the-Loop (HITL) workflows for data integrity.</li>
+      <li><strong>LLM Orchestration (HRM):</strong> developed RAG-based features using LlamaIndex and FastAPI to enhance internal HRM system querying and reporting.</li>
+      <li><strong>GenCXR (Medical Imaging):</strong> built a chest X-ray object-detection + segmentation pipeline with PyTorch, Torchvision, Detectron2 / SAM (mAP / IoU / F1), driving an LLM-based automated radiology report generator.</li>
+      <li><strong>Model Training &amp; Optimization:</strong> led training and validation of Computer Vision models (PyTorch) for pathology detection — <strong>High Excellence in AI</strong> and <strong>2nd Prize at Techcon23</strong>.</li>
+      <li><strong>Medical Chatbot:</strong> integrated an LLM-based query system so clinicians can interact with generated radiology reports.</li>
+      <li><strong>Prescription Reminder:</strong> built an end-to-end patient-care solution using OCR and LlamaIndex to extract medication data from images and automate dosage scheduling.</li>
     </ul>
     <div class="exp-tags">
-      <span>LlamaIndex</span><span>CrewAI</span><span>AutoGen</span><span>FastAPI</span><span>OCR</span>
+      <span>PyTorch</span><span>Torchvision</span><span>OpenCV</span><span>Albumentations</span><span>PaddleOCR</span><span>Donut</span><span>Detectron2</span><span>SAM</span><span>LlamaIndex</span><span>CrewAI</span><span>AutoGen</span><span>FastAPI</span><span>Docker</span>
     </div>
   </div>
 
@@ -294,8 +303,12 @@
     </div>
     <div class="exp-company">KYTESOFT Technology</div>
     <ul>
-      <li>Built face recognition pipeline using RetinaFace (detection) and ArcFace (verification).</li>
+      <li>Researched state-of-the-art methods in face detection and verification.</li>
+      <li>Built a face-recognition pipeline using <strong>RetinaFace</strong> (detection) and <strong>ArcFace</strong> (verification).</li>
     </ul>
+    <div class="exp-tags">
+      <span>Face Recognition</span><span>RetinaFace</span><span>ArcFace</span><span>PyTorch</span>
+    </div>
   </div>
 </div>
 
@@ -365,25 +378,37 @@
     <div class="skill-category">
       <h3>Programming &amp; Frameworks</h3>
       <div class="tags">
-        <span>Python</span><span>SQL</span><span>PostgreSQL</span><span>TensorFlow</span><span>PyTorch</span><span>FastAPI</span><span>Docker</span>
+        <span>Python</span><span>SQL</span><span>PostgreSQL</span><span>TensorFlow</span><span>PyTorch</span><span>FastAPI</span><span>Docker</span><span>TypeScript</span>
       </div>
     </div>
     <div class="skill-category">
       <h3>Machine Learning &amp; AI</h3>
       <div class="tags">
-        <span>Deep Learning</span><span>Computer Vision</span><span>NLP</span><span>LLMs</span><span>RAG</span><span>Data Augmentation</span>
+        <span>Machine Learning</span><span>Deep Learning</span><span>Computer Vision</span><span>NLP</span><span>LLMs</span><span>RAG</span><span>Data Augmentation</span>
       </div>
     </div>
     <div class="skill-category">
-      <h3>Infrastructure &amp; Data</h3>
+      <h3>Data &amp; Infrastructure</h3>
       <div class="tags">
-        <span>Redis</span><span>MLOps</span><span>AWS</span><span>GCP</span><span>API Development</span>
+        <span>Data Modeling</span><span>Data Visualization</span><span>Redis</span><span>MLOps</span><span>API Development</span><span>AWS</span><span>GCP</span><span>Cloud Deployment</span>
       </div>
     </div>
     <div class="skill-category">
       <h3>Tools &amp; Libraries</h3>
       <div class="tags">
-        <span>Hugging Face</span><span>LangChain</span><span>LangGraph</span><span>LangSmith</span><span>LlamaIndex</span><span>Claude Skills</span><span>Docling</span><span>LlamaParse</span><span>Streamlit</span><span>Git</span>
+        <span>Hugging Face</span><span>LangChain</span><span>LangGraph</span><span>LangSmith</span><span>LlamaIndex</span><span>Claude Skills</span><span>Docling</span><span>LlamaParse</span><span>PageIndex</span><span>SimpleMem</span><span>Streamlit</span><span>Git</span>
+      </div>
+    </div>
+    <div class="skill-category">
+      <h3>Soft Skills</h3>
+      <div class="tags">
+        <span>Leadership</span><span>Teamwork</span><span>Research</span><span>Project Management</span><span>Presentation</span>
+      </div>
+    </div>
+    <div class="skill-category">
+      <h3>Language</h3>
+      <div class="tags">
+        <span>English — TOEIC 725 (L&amp;R)</span><span>TOEIC 300 (S&amp;W)</span>
       </div>
     </div>
   </div>
