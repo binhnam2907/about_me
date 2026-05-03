@@ -1,14 +1,14 @@
 :root {
-  --primary: #2c3e50;
-  --accent: #3498db;
-  --accent-hover: #2980b9;
+  --primary: #1f2d3d;
+  --accent: #2563a6;
+  --accent-hover: #174a7c;
   --text: #333;
   --text-light: #6c757d;
   --bg: #fff;
   --bg-alt: #f8f9fa;
   --border: #dee2e6;
   --nav-height: 56px;
-  --max-width: 840px;
+  --max-width: 920px;
 }
 
 * {
@@ -162,6 +162,19 @@ main {
 
 .about-info .bio strong { font-weight: 600; }
 
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  margin: 2px 0 14px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: rgba(37, 99, 166, 0.08);
+  border: 1px solid rgba(37, 99, 166, 0.18);
+  color: var(--accent-hover);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
 .contact-links {
   display: flex;
   gap: 16px;
@@ -194,6 +207,35 @@ main {
 
 .research-interests strong {
   color: var(--primary);
+}
+
+.profile-highlights {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 14px 0 12px;
+}
+
+.profile-highlights div {
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.profile-highlights strong {
+  display: block;
+  color: var(--primary);
+  font-size: 1.2rem;
+  line-height: 1.1;
+}
+
+.profile-highlights span {
+  display: block;
+  color: var(--text-light);
+  font-size: 0.76rem;
+  line-height: 1.35;
+  margin-top: 3px;
 }
 
 /* ─── Tabs ─── */
@@ -251,6 +293,53 @@ main {
   font-weight: 700;
   color: var(--primary);
   margin-bottom: 20px;
+}
+
+/* ─── PhD focus ─── */
+.phd-intro {
+  padding: 18px;
+  border: 1px solid rgba(37, 99, 166, 0.18);
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(37, 99, 166, 0.08), rgba(37, 99, 166, 0.02));
+  margin-bottom: 18px;
+}
+
+.phd-intro p {
+  font-size: 0.94rem;
+  color: var(--primary);
+}
+
+.focus-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.focus-card,
+.statement-block {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  background: #fff;
+}
+
+.focus-card h3,
+.statement-block h3 {
+  color: var(--primary);
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.focus-card p,
+.statement-block p {
+  color: var(--text-light);
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.statement-block {
+  border-left: 4px solid var(--accent);
 }
 
 /* ─── News ─── */
@@ -581,6 +670,11 @@ footer {
   .about-info h1 { font-size: 1.4rem; }
 
   .contact-links { justify-content: center; }
+
+  .profile-highlights,
+  .focus-grid {
+    grid-template-columns: 1fr;
+  }
 
   .skills-grid,
   .projects-grid {

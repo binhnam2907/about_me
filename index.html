@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Le Nguyen Binh Nam</title>
-  <meta name="description" content="Le Nguyen Binh Nam — AI Engineer & Researcher. Computer Vision, NLP, LLMs, Medical Imaging.">
+  <title>Le Nguyen Binh Nam | AI Researcher</title>
+  <meta name="description" content="Le Nguyen Binh Nam — AI Engineer and AI Researcher seeking PhD scholarship opportunities in medical AI, computer vision, multimodal learning, and explainable AI.">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -17,8 +17,9 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links">
-      <li><a href="#" onclick="switchTab('publications');return false">bio</a></li>
-      <li><a href="cv/LNBNam_CV_AIE.pdf" target="_blank">cv</a></li>
+      <li><a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">bio</a></li>
+      <li><a href="#" onclick="switchTab('research');return false">research</a></li>
+      <li><a href="cv/CV_AI_LNBN.pdf" target="_blank">cv</a></li>
       <li><a href="https://scholar.google.com/citations?user=-wDkn7AAAAAJ&hl=en" target="_blank">scholar</a></li>
     </ul>
   </div>
@@ -33,24 +34,30 @@
   </div>
   <div class="about-info">
     <h1>Le Nguyen Binh Nam</h1>
-    <div class="subtitle">AI Engineer &amp; AI Researcher</div>
+    <div class="subtitle">AI Engineer &amp; AI Researcher · PhD Scholarship Applicant</div>
     <div class="affiliation">
-      <a href="https://www.hcmus.edu.vn" target="_blank">University of Science — VNU-HCM</a> · <a href="https://www.fpt-software.com" target="_blank">FPT Software</a>
+      <a href="https://www.fpt-software.com" target="_blank">FPT Software</a> · Research Collaborator, <a href="https://www.uh.edu" target="_blank">University of Houston</a> · <a href="https://www.hcmus.edu.vn" target="_blank">University of Science — VNU-HCM</a>
     </div>
+    <div class="status-badge">Seeking funded PhD opportunities in AI / Computer Vision / Medical AI</div>
     <p class="bio">
-      I'm an <strong>AI Engineer &amp; AI Researcher</strong> based in Ho Chi Minh City, Viet Nam. I'm pursuing an MS in Artificial Intelligence at the <strong>University of Science — VNU-HCM</strong> (BSMS track) and collaborate with the <strong>University of Houston</strong>.
-      My research focuses on <strong>medical image analysis</strong>, <strong>visual question answering</strong>, and <strong>explainable AI</strong>, with applications in computational pathology and multimodal reasoning.
+      I am an <strong>AI Engineer &amp; AI Researcher</strong> based in Ho Chi Minh City, Viet Nam, with <strong>3+ years of professional AI experience</strong> and an active research collaboration with the <strong>University of Houston</strong>. My work connects applied machine learning with research problems in medical imaging, visual question answering, explainable AI, and multimodal reasoning.
     </p>
     <p class="bio">
-      I have published <strong>4 papers</strong> as first/co-first author at top-tier venues including <strong>WACV</strong> and <strong>MICCAI Workshop</strong>, spanning whole slide image classification, feature attribution, and Vietnamese VQA benchmarks.
-      I am currently seeking <strong>PhD positions</strong> in computer vision, medical AI, or multimodal learning.
+      I have contributed to <strong>4 research papers</strong> at venues and workshops including <strong>WACV</strong>, <strong>MICCAI Workshop</strong>, <strong>AAAI Workshop</strong>, and <strong>ICISN</strong>. My publication record spans whole-slide image classification, feature attribution, grounded clinical description generation, and Vietnamese VQA benchmarks.
     </p>
     <p class="bio">
-      I also bring <strong>3+ years of industry experience</strong> as an AI Engineer — currently a <strong>Senior AI Engineer at FPT Software</strong> — building production systems for multi-agent clinical assistants, document AI, generative design, and multimodal RAG.
+      I am seeking a <strong>funded PhD scholarship</strong> where I can study reliable, explainable, and multimodal AI systems, especially for healthcare and low-resource vision-language applications. In parallel, I bring production experience from FPT Software, Visily, Kegmil, and KMS Technology, where I built clinical assistants, document AI systems, generative design models, and multimodal RAG pipelines.
     </p>
 
     <div class="research-interests">
-      <strong>Research Interests:</strong> Medical Image Analysis · Explainable AI · Visual Question Answering · Computational Pathology · Multimodal Learning · Vision-Language Models
+      <strong>Research Interests:</strong> Medical Image Analysis · Explainable AI · Visual Question Answering · Computational Pathology · Multimodal Learning · Vision-Language Models · Agentic AI
+    </div>
+
+    <div class="profile-highlights" aria-label="Profile highlights">
+      <div><strong>4</strong><span>Research papers</span></div>
+      <div><strong>3+</strong><span>Years AI experience</span></div>
+      <div><strong>92%</strong><span>Clinical QA accuracy</span></div>
+      <div><strong>94%</strong><span>RAG retrieval accuracy</span></div>
     </div>
 
     <div class="contact-links">
@@ -60,19 +67,58 @@
       <a href="https://linkedin.com/in/binhnam2907" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
       <a href="https://scholar.google.com/citations?user=-wDkn7AAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i> Scholar</a>
       <a href="https://github.com/binhnam2907" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="cv/CV_AI_LNBN.pdf" target="_blank"><i class="fas fa-file-pdf"></i> CV</a>
     </div>
   </div>
 </section>
 
 <!-- ─── Tab Bar ─── -->
 <div class="tabs-bar">
-  <button class="tab-btn active" onclick="switchTab('publications')">Publications</button>
-  <button class="tab-btn" onclick="switchTab('research')">Research</button>
-  <button class="tab-btn" onclick="switchTab('experience')">Industry</button>
-  <button class="tab-btn" onclick="switchTab('news')">News</button>
-  <button class="tab-btn" onclick="switchTab('projects')">Projects</button>
-  <button class="tab-btn" onclick="switchTab('education')">Education</button>
-  <button class="tab-btn" onclick="switchTab('skills')">Skills</button>
+  <button class="tab-btn active" data-tab="phd" onclick="switchTab('phd')">PhD Focus</button>
+  <button class="tab-btn" data-tab="publications" onclick="switchTab('publications')">Publications</button>
+  <button class="tab-btn" data-tab="research" onclick="switchTab('research')">Research</button>
+  <button class="tab-btn" data-tab="experience" onclick="switchTab('experience')">Industry</button>
+  <button class="tab-btn" data-tab="news" onclick="switchTab('news')">News</button>
+  <button class="tab-btn" data-tab="projects" onclick="switchTab('projects')">Projects</button>
+  <button class="tab-btn" data-tab="education" onclick="switchTab('education')">Education</button>
+  <button class="tab-btn" data-tab="skills" onclick="switchTab('skills')">Skills</button>
+</div>
+
+<!-- ═══════════════════ TAB: PhD Focus ═══════════════════ -->
+<div id="tab-phd" class="tab-panel active">
+  <h2 class="section-title">phd scholarship focus</h2>
+
+  <div class="phd-intro">
+    <p>
+      I am looking for a PhD position where I can develop robust and interpretable AI methods for medical imaging and multimodal understanding. My strongest fit is with labs working on computer vision, vision-language models, explainability, computational pathology, visual question answering, or AI systems that combine learning, retrieval, and human feedback.
+    </p>
+  </div>
+
+  <div class="focus-grid">
+    <div class="focus-card">
+      <h3>Research Direction</h3>
+      <p>Explainable and trustworthy vision-language AI for healthcare, especially whole-slide image classification, clinical description generation, and medical decision support.</p>
+    </div>
+    <div class="focus-card">
+      <h3>Research Evidence</h3>
+      <p>Co-authored 4 research papers across WACV, MICCAI Workshop, AAAI Workshop, and ICISN, with work on feature attribution, VQA, and grounded clinical multimodal learning.</p>
+    </div>
+    <div class="focus-card">
+      <h3>Engineering Strength</h3>
+      <p>Built production AI systems with PyTorch, FastAPI, Docker, RAG, OCR, LLMs, multi-agent orchestration, and document AI across healthcare, design automation, and enterprise workflows.</p>
+    </div>
+    <div class="focus-card">
+      <h3>PhD Readiness</h3>
+      <p>Experienced in reading papers, building baselines, training models, running evaluations, leading small research teams, and translating research ideas into tested systems.</p>
+    </div>
+  </div>
+
+  <div class="statement-block">
+    <h3>Research Statement Snapshot</h3>
+    <p>
+      My long-term goal is to build AI systems that are not only accurate, but also grounded, interpretable, and useful in high-stakes domains. I am especially interested in methods that explain model decisions in medical images, align visual evidence with language, and support clinicians or domain experts through human-in-the-loop workflows.
+    </p>
+  </div>
 </div>
 
 <!-- ═══════════════════ TAB: News ═══════════════════ -->
@@ -107,15 +153,11 @@
       <td class="news-date">Jul 2024</td>
       <td>Started research collaboration with <a href="https://www.uh.edu" target="_blank">University of Houston</a> on VQA &amp; Medical Imaging.</td>
     </tr>
-    <tr>
-      <td class="news-date">Apr 2023</td>
-      <td>Admitted to the <strong>Master of AI</strong> program (BSMS Track) at University of Science — VNU-HCM.</td>
-    </tr>
   </table>
 </div>
 
 <!-- ═══════════════════ TAB: Publications ═══════════════════ -->
-<div id="tab-publications" class="tab-panel active">
+<div id="tab-publications" class="tab-panel">
   <h2 class="section-title">publications</h2>
 
   <div class="pub-item">
@@ -177,12 +219,12 @@
       <span class="exp-title">Research Collaborator</span>
       <span class="exp-date">Jul 2024 — Present</span>
     </div>
-    <div class="exp-company">AI VIETNAM - University of Houston</div>
+    <div class="exp-company">AI VIETNAM · University of Houston</div>
     <ul>
       <li>Led a 4-member research team on Visual Question Answering (VQA) and Medical Imaging Analysis.</li>
       <li>Developed <strong>Contrastive Integrated Gradients (CIG)</strong>, a novel feature attribution method for explainable whole slide image classification, validated on 3 cancer datasets (CAMELYON16, TCGA-RCC, TCGA-Lung). Published at <strong>WACV 2026</strong>.</li>
       <li>Co-developed <strong>GMAT</strong>, a grounded multi-agent framework for clinical description generation in vision-language MIL pipelines for WSI classification. Published at <strong>MICCAI 2025 Workshop</strong>.</li>
-      <li>Built <strong>ViInfographicVQA</strong>, the first Vietnamese infographic VQA benchmark (6,747 infographics, 20,409 QA pairs) with single- and multi-image evaluation settings. Accepted at <strong>AI4Research @ AAAI 2026</strong>.</li>
+      <li>Built <strong>ViInfographicVQA</strong>, a Vietnamese infographic VQA benchmark with single- and multi-image evaluation settings. Accepted at <strong>AI4Research @ AAAI 2026</strong>.</li>
       <li>Designed an automated pipeline for constructing Vietnamese VQA-NLE datasets. Published at <strong>ICISN 2025</strong>.</li>
     </ul>
     <div class="exp-tags">
@@ -209,12 +251,13 @@
 
   <div class="experience-item">
     <div class="exp-header">
-      <span class="exp-title">MS Student (BSMS Program)</span>
-      <span class="exp-date">Apr 2023 — Aug 2026</span>
+      <span class="exp-title">Research Foundation</span>
+      <span class="exp-date">2020 — Present</span>
     </div>
-    <div class="exp-company">University of Science — VNU-HCM · Major: Artificial Intelligence</div>
+    <div class="exp-company">University of Science — VNU-HCM · Computer Science / Data Science</div>
     <ul>
-      <li>GPA: 3.36 / 4.0. Coursework in deep learning, computer vision, NLP, and optimization.</li>
+      <li>Built a strong background in machine learning, deep learning, computer vision, NLP, and data science through coursework, research collaboration, and applied AI projects.</li>
+      <li>Bachelor GPA: 3.59 / 4.0; Math GPA: 3.78 / 4.0.</li>
     </ul>
   </div>
 </div>
@@ -355,17 +398,8 @@
   <div class="edu-item">
     <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
     <div class="edu-content">
-      <div class="edu-degree">Master of Artificial Intelligence</div>
-      <div class="edu-school">University of Science — VNU-HCM · BSMS Program</div>
-      <div class="edu-detail">Apr 2023 — Aug 2026 · GPA: 3.36 / 4.0</div>
-    </div>
-  </div>
-
-  <div class="edu-item">
-    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
-    <div class="edu-content">
       <div class="edu-degree">Bachelor of Computer Science</div>
-      <div class="edu-school">University of Science — VNU-HCM · High Quality Program (Data Science)</div>
+      <div class="edu-school">University of Science — VNU-HCM · High Quality Program · Major: Data Science / Computer Science</div>
       <div class="edu-detail">Sep 2020 — Sep 2024 · GPA: 3.59 / 4.0 · Math GPA: 3.78 / 4.0</div>
     </div>
   </div>
@@ -426,7 +460,7 @@ function switchTab(name) {
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
   document.getElementById('tab-' + name).classList.add('active');
   document.querySelectorAll('.tab-btn').forEach(b => {
-    if (b.textContent.toLowerCase() === name) b.classList.add('active');
+    if (b.dataset.tab === name) b.classList.add('active');
   });
   document.querySelector('.nav-links')?.classList.remove('open');
 }
